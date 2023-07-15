@@ -147,6 +147,6 @@ href="mailto:devjobs@devjobs.com?subject=Application%20to%20{{ job['title']|urle
 - The "{{ job['title']|urlencode }}" part is a placeholder that will be replaced with the URL-encoded version of the job title.
 - "|urlencode" is used in URL encoding. It is used to ensure that URLs are properly formatted and can be transmitted correctly over the internet.
 
-##See all your pip packages installed and versions: 
+## See all your pip packages installed and versions: 
 
-- [x] Run: py -m pip list
+- [x] Run: `py -m pip list`
