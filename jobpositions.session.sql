@@ -1,0 +1,2 @@
+--@block
+SELECT * FROM jobs;

@@ -1,0 +1,103 @@
+<div class="container my-5 pt-md-0">
+  <div class="row mt-5 d-flex align-items-center g-5">
+    <!--CAROUSEL WHEN SCREEN BIG-->
+    <div class="d-none d-lg-block col-lg-7 mt-5">
+      <div class="d-flex justify-content-center">
+        <img
+          name="slide"
+          alt="computers"
+          class="img-fluid"
+          style="
+            box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            height: 380px;
+            max-width: 100%;
+            object-fit: cover;
+            padding: auto;
+          "
+        />
+      </div>
+    </div>
+
+    <!--TEXT-->
+
+    <div class="d-block col-lg-5 mt-5">
+      <p
+        class="text-lg-start text-center mb-4"
+        style="
+          font-size: 70px;
+          font-family: 'Josefin Sans', sans-serif;
+          font-weight: 500;
+          line-height: 1.1;
+        "
+      >
+        Jobs that change lives
+      </p>
+      <p class="fs-4 mb-4 text-lg-start text-center">
+        Roles that challenge you as a developer, push you out of your comfort
+        zone, and provide opportunities for learning and development.
+      </p>
+
+      <div class="d-flex justify-content-center justify-content-lg-start">
+        <button class="btn btn-dark mt-3 py-2 btn-lg image-up" type="button">
+          <a href="#job" style="color: white; text-decoration: none"
+            >Start now. It's free!</a
+          >
+        </button>
+      </div>
+    </div>
+
+    <!--CAROUSEL WHEN SCREEN SMALL-->
+    <div
+      class="d-flex justify-content-center d-lg-none d-lx-none d-sm-block mx-auto"
+    >
+      <img
+        name="slide2"
+        alt="computers"
+        class="img-fluid"
+        style="
+          box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+          border-radius: 5px;
+          height: 300px;
+          width: 90%;
+          object-fit: cover;
+        "
+      />
+    </div>
+  </div>
+
+  <!--SCRIPTS-->
+  <script>
+    let i = 0; // Start Point
+    let images = []; // Images Array
+    let time = 2000; // Time Between Switch
+
+    // Image List
+    images[0] = "/static/developer1.jpg";
+    images[1] = "/static/developer2.jpg";
+    images[2] = "/static/developer3.jpg";
+    images[3] = "/static/developer4.jpg";
+    images[4] = "/static/developer5.jpg";
+
+    // Change Image
+    function changeImg() {
+      document.slide.src = images[i];
+      document.slide2.src = images[i];
+
+      // Check If Index Is Under Max
+      if (i < images.length - 1) {
+        // Add 1 to Index
+        i++;
+      } else {
+        // Reset Back To O
+        i = 0;
+      }
+
+      // Run function every x seconds
+      setTimeout("changeImg()", time);
+    }
+
+    // Run function when page loads
+    window.onload = changeImg;
+  </script>
+</div>

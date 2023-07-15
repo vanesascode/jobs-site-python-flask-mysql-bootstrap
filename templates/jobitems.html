@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="mb-3 border-bottom pb-4 row">
+    <!--DESCRIPTIONS-->
+    <div
+      class="col-12 col-md-9 mb-4 mb-md-0 mt-5 mt-md-0"
+      style="font-family: 'Josefin Sans', sans-serif"
+    >
+      <h3>{{ job[1] }}</h3>
+
+      <div class="mb-2"><b>Location: </b>{{ job[2] }}</div>
+
+      <div><b>Description: </b>{{ job[3] }}</div>
+    </div>
+
+    <!--BUTTONS-->
+    <div
+      class="col-12 col-md-3 d-flex justify-content-center align-items-center mb-4 mb-md-0"
+      style="font-family: 'Josefin Sans', sans-serif"
+    >
+      <a
+        class="btn btn-warning btn-lg image-up"
+        href="mailto:devjobs@devjobs.com?subject=More%20info%20about%20the%20'{{ job[1]|urlencode }}'%20position.&body=My%20name%3A%0D%0A%0D%0AMy%20CV%3A%0D%0A%0D%0AMy%20Linkedin%3A"
+        >More info</a
+      >
+    </div>
+  </div>
+</div>
