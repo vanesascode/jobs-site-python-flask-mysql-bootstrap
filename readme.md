@@ -1,8 +1,9 @@
 # Jobs site using Python Flask stack with MySQL for database management (BACKEND + FRONTEND)
 
-In the video you can see how it looks and what it does. Notice this app is still in development stage running on a local domain. It is a learning project and you can find all my notes during the process, which helped me understand everything better, below the video. 👇👇👇
+In the link you can see how it looks and what it does. Notice the code of this app is still in development stage running on a local domain. It is a learning project and you can find all my notes during the process, which helped me understand everything better: 👇👇👇 
 
----
+## https://dev-jobs-by-vanesascode.onrender.com/
+![Captura](https://github.com/vanesascode/jobs-site-python-flask-mysql-bootstrap/assets/131259155/d4ff4d32-e7f2-4ca2-815f-7bcf6bab9f1b)
 
 The combination of `Python, Flask, and MySQL` is commonly used in web development to create a full-stack application. Flask is a lightweight web framework in Python, while MySQL is a popular relational database management system.
 
